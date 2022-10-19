@@ -25,37 +25,37 @@ const Header = () => {
     return (
         <nav className= {scrolled?"scrolled navbar navbar-expand-lg bg-light":"navbar navbar-expand-lg bg-light"}>
         <div className="container">
-          <div className="row w-100"> 
-            <div className="col-12 col-lg-5 col-xl-8 col_logo row"> 
+          <div className="row w-100 m-auto"> 
+            <div className="col-12 col-lg p-0 col-xl col_logo row"> 
                 <a className="navbar-brand col-10" href="#">Navbar</a>
                 <button className="navbar-toggler col p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div className="col-12 col-lg-7 col-xl-4 col_nav row">
-                <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul className="navbar-nav  mb-2 mb-lg-0">
-                      <li className="nav-item">
-                          <Link  className={activeLink==="home"?"nav-link active":"nav-link"} onClick={ ()=>UpdateActiveLink("home")} >Home</Link> 
-                      </li>
-                      <li className="nav-item">
-                          <Link  className={activeLink==="sobremi"?"nav-link active":"nav-link"} onClick={ ()=>UpdateActiveLink("sobremi")} >Sobre mi</Link> 
-                      </li>
-                      <li className="nav-item">
-                          <Link  className={activeLink==="tecnologias"?"nav-link active":"nav-link"} onClick={ ()=>UpdateActiveLink("tecnologias")} >Tecnologias</Link> 
-                      </li>
-                    
-                    </ul>
-                  
-                    <div className="text-end row ">
-                    
-                      
-                    <div className=" text-center">
-                        <button className="btn" type="submit">Contactame</button>
-                    </div>
+            <div className="col-12 p-0 col-lg-5 col-xl-5 col_nav row">
+                <div className="collapse navbar-collapse p-0 row" id="navbarSupportedContent">
+                    <div className="col-lg">
+                        <ul className="navbar-nav  mb-2 mb-lg-0">
+                          <li className="nav-item">
+                              <a  className={activeLink==="home"?"nav-link active":"nav-link"} href="#present" onClick={ ()=>UpdateActiveLink("home")} >Sobremi</a> 
+                          </li>
+                          <li className="nav-item">
+                              <a  className={activeLink==="tecnologias"?"nav-link active":"nav-link"} href="#tecnologias" onClick={ ()=>UpdateActiveLink("tecnologias")} >Tecnologias</a> 
+                          </li>
+                          <li className="nav-item">
+                              <a  className={activeLink==="sobremi"?"nav-link active":"nav-link"} href="#projects" onClick={ ()=>UpdateActiveLink("sobremi")} >Proyectos</a> 
+                          </li>
+                        
+                        
+                        </ul>
 
+                    </div>
                   
-              </div>
+                    <div className="  col-lg-3">
+                      <div className=" text-center">
+                          <a className="btn btn-contacto" href="#contacto"> Contactame</a>
+                      </div>
+                    </div>
                 </div>
                 
             </div>

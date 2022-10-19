@@ -4,7 +4,7 @@ const project = () => {
         let box = [];
         for (let i = 0; i < 9; i++) {
             box.push(
-                <div className="card m-3" >
+                <div className="card m-3"  >
                     <div className="contentimg">
                     </div>
                         <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196586/icons/project1_juuxck.png" className="card-img" alt="..."/>
@@ -45,7 +45,7 @@ const project = () => {
     }
 
     return (  
-        <div className="proyects">
+        <div className="proyects" id="projects">
             <div className="container pt-5 pb-5">
             <h2 className="text-center m-auto titulo">Todos mis project</h2>
             <div class="underline"></div>

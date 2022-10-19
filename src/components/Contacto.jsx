@@ -1,9 +1,12 @@
-import navIcon1 from "../assets/img/inst.svg";
+/* import navIcon1 from "../assets/img/inst.svg";
 import navIcon2 from "../assets/img/linkedin.svg";
-import navIcon3 from "../assets/img/face.svg";
+import navIcon3 from "../assets/img/face.svg"; */
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
 const Contacto = () => {
     return (  
-        <div className="contacto">
+        <div className="contacto" id="contacto">
 
             <div className="container pb-5 pt-5">
                 <div className="contact">
