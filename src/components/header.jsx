@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import {Link, NavLink} from "react-router-dom"
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [activeLink, setActiveLink] = useState("home");
@@ -28,14 +26,14 @@ const Header = () => {
         <nav className= {scrolled?"scrolled navbar navbar-expand-lg bg-light":"navbar navbar-expand-lg bg-light"}>
         <div className="container">
           <div className="row w-100"> 
-            <div className="col-5 col_logo"> 
-                <a className="navbar-brand" href="#">Navbar</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div className="col-12 col-lg-5 col-xl-8 col_logo row"> 
+                <a className="navbar-brand col-10" href="#">Navbar</a>
+                <button className="navbar-toggler col p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div className="col-7 col_nav row">
-                <div className="collapse navbar-collapse col-5" id="navbarSupportedContent">
+            <div className="col-12 col-lg-7 col-xl-4 col_nav row">
+                <div className="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul className="navbar-nav  mb-2 mb-lg-0">
                       <li className="nav-item">
                           <Link  className={activeLink==="home"?"nav-link active":"nav-link"} onClick={ ()=>UpdateActiveLink("home")} >Home</Link> 
@@ -49,21 +47,17 @@ const Header = () => {
                     
                     </ul>
                   
-                </div>
-                <div className="text-end col-7 row">
+                    <div className="text-end row ">
                     
-                      <div className="social-icon col">
-                          <a href=""><img src={navIcon1} alt="" /> </a>
-                          <a href=""><img src={navIcon2} alt="" /> </a>
-                          <a href=""><img src={navIcon3} alt="" /> </a>
+                      
+                    <div className=" text-center">
+                        <button className="btn" type="submit">Contactame</button>
+                    </div>
 
-                      </div>
-                      <div className="col">
-                          <button className="btn" type="submit">Contactame</button>
-                      </div>
-
-                    
+                  
+              </div>
                 </div>
+                
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 const Tecnologias = () => {
     return (
-        <div className="tecnologias">
+        <div className="tecnologias m-auto">
             <div className="container pt-5 pb-5">
                 <h2 className="text-center m-auto titulo" >Tecnologias</h2>
                 <div class="underline"></div>
