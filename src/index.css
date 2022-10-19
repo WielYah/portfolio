@@ -3,16 +3,15 @@
     padding: 0;
 }
 body{
-/* background-color: var(--tercer-bg-color);
- */}
+ background-color: var(--tercer-bg-color) ;
+ }
+
 :root {
     --main-bg-color: #222125  ;
     --second-bg-color:#788648;
     --tercer-bg:#242B43;
     --cuarto-bg:#F8F6ED;
     --quinto-bg:#f8f9fa;
-
-
     --main-color:#FFFFFF;
     --second-color:"";
   }
@@ -91,12 +90,16 @@ nav.navbar{
  /* Projects */
 
 .project{
-    width: 88%;
-    margin: auto;
+     width: 100%;
+    margin: auto; 
     font-size: 12px;
     padding: 4px;
+   /*  display: grid;
+    grid-template-columns: repeat(4,1fr); */
  }
  .project div{
+    
+    width: 30px;
     padding: 5px;
     text-align: center;
  }
@@ -106,6 +109,16 @@ nav.navbar{
     font-size: 20px;
     width: 80%;
  }
+ .box {
+    width: 43px ;
+    height: 30px;
+}
+.box img{
+
+    width: 30px;
+    object-fit: cover;
+    height: 30px;
+}
  .card-text{
     width: 100%;
     margin: auto;
@@ -209,15 +222,7 @@ nav.navbar{
     border-radius: 50%;
 } */
 
-.box {
-    width: 43px ;
-    height: 30px;
-}
-.box img{
-    width: 86%;
-    object-fit: cover;
-    height: 30px;
-}
+
 
 /* BANNER */
 .banner{
@@ -236,13 +241,14 @@ nav.navbar{
 /* TECNOLOGIAS */
 .tecnologias{
     padding:40px ;
+    background: var(--tercer-bg);
     
 }
 .tecnologias .card div:first-child{
-    padding-top: 20px;
+    padding: 20px;
 }
 .tecnologias .titulo{
-    color: var(--tercer-bg);
+    color: var(--quinto-bg);
 }
 
 /* PROYECTS */
@@ -250,11 +256,38 @@ nav.navbar{
 .proyects{
     padding:40px ;
     background: var(--tercer-bg);
+    
+}
+.card{
+    position: relative;
+    padding: 0;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 .projects .card{
     box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
     transition: all 300ms;
     border: 0;
+    border-radius: 10px;
+    width: 22rem;
+    height: 400px;
+}
+.contentimg{
+    z-index: 1;
+   border-radius: 8px 8px 0px 0px;
+    top: 0px;
+   position: absolute;
+   width: 100%;
+   height: 40%;
+   background: #2F466E;
+}
+.projects .card .card-img{
+    z-index: 10;
+   width: 250px !important; 
+   margin: auto;
+   margin-top: 15px;
 }
 .projects .card:hover{
     box-shadow: 1px 1px 3px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06) ;
@@ -267,11 +300,11 @@ nav.navbar{
 /* CONTACTO */
 .contacto{
     padding:40px ;
-    /* background: var(--tercer-bg) */
+     background: var(--tercer-bg) 
 }
 .contacto{
   /*   color: var(--main-color); */
-  color: var(--tercer-bg);
+  color: var(--main-color);
 }
 
 
@@ -279,15 +312,11 @@ nav.navbar{
     width: 5rem;
     height: 0.25rem;
     margin-bottom: 1.25rem;
-    
     margin-left: auto;
     margin-right: auto;
 }
 
-.tecnologias .underline ,.contacto .underline{
-    background: var(--tercer-bg);
-}
-
-.proyects .underline{
+.tecnologias .underline ,.contacto .underline,.proyects .underline{
     background: var(--cuarto-bg);
 }
+
