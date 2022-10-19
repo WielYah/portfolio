@@ -7,7 +7,7 @@ const project = () => {
                 <div className="card m-3" >
                     <div className="contentimg">
                     </div>
-                        <img src="./src/assets/img/project1.png" className="card-img" alt="..."/>
+                        <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196586/icons/project1_juuxck.png" className="card-img" alt="..."/>
                     
                 <div className="card-body">
                     <h3 className="header_cards text-center">GHO Computer</h3>
@@ -15,22 +15,22 @@ const project = () => {
                     <div className="row project">
                         <div className="col">
                             <div className="box">
-                                <img src="/nodejs.jpg" alt="" />
+                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/nodejs_emipcf.jpg" alt="" />
                             </div>
                         </div>
                         <div className="col">
                            <div className="box">
-                                <img src="/html.png" alt="" />
+                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/html_nedseq.png" alt="" />
                            </div>
                         </div>
                         <div className="col">
                             <div className="box">
-                                <img src="/Bootstrap.png" alt="" />
+                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/Bootstrap_iotlgx.png" alt="" />
                            </div>
                         </div>
                         <div className="col">
                             <div className="box">
-                                <img src="/Postgre.png" alt="" />
+                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/postgre_hilucb.png" alt="" />
                            </div>
                             
                         </div>
