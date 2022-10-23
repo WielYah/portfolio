@@ -11,9 +11,9 @@ const Contacto = () => {
             <div className="container pb-5 pt-5">
                 <div className="contact">
                     <h2 className="text-center m-auto  titulo">Contactame</h2>
-                    <div class="underline mb-5"></div>
+                    <div className="underline mb-5"></div>
 
-                    <h3 className="text-center m-auto ">WielDev@gmail.com</h3>
+                    <h3 className="text-center m-auto ">yahiesdev@gmail.com</h3>
                     <div className="contact_icons text-center pt-3">
                         <div className="social-icon">
                             <a href=""><img src={navIcon1} alt="" /> </a>

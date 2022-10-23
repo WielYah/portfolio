@@ -4,7 +4,7 @@ const Tecnologias = () => {
             <div className="container pt-5 pb-5">
                 <div className="w-100 m-auto">
                     <h2 className="text-center m-auto titulo"  >Tecnologias</h2>
-                    <div class="underline"></div>
+                    <div className="underline"></div>
                     <div className="tecn m-auto row pt-5 pb-5">
 
                         <div className="card col ">
