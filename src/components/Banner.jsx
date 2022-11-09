@@ -11,11 +11,15 @@ const Banner = () => {
                         <div className="col-12 col-sm-7 col-md align-self-center">
                             <span className="tagline">Bienvenido a mi Portafolio</span>
                             <h1 className="present" >Hola! Soy Wiel </h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ut accusamus quos illo mollitia vel tempora ipsam alias ab quia suscipit, eaque error accusantium excepturi aut soluta et ratione dicta?</p>
+                            <p className="" >Desarrollador de software full stack, 
+                                contento y emocionado de mi carrera, colaborativo dentro 
+                                de un equipo productivo, dispuesto y capaz de ejercer soluciones
+                                 innovadoras y optimizadas, con experiencia del desarrollo y 
+                                 mantenimiento de sistemas</p>
                             <div className="social-icon col">
                           <a href=""><img src={navIcon1} alt="" /> </a>
                           <a href=""><img src={navIcon2} alt="" /> </a>
-                          <a href=""><img src={navIcon3} alt="" /> </a>
+                          <a href="https://www.instagram.com/7wiel/" target="_blank"><img src={navIcon3} alt="" /> </a>
 
                       </div>                        
                         </div>

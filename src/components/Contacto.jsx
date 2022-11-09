@@ -18,7 +18,7 @@ const Contacto = () => {
                         <div className="social-icon">
                             <a href=""><img src={navIcon1} alt="" /> </a>
                             <a href=""><img src={navIcon2} alt="" /> </a>
-                            <a href=""><img src={navIcon3} alt="" /> </a>
+                            <a href="https://www.instagram.com/7wiel/" target="_blank"><img src={navIcon3} alt="" /> </a>
 
                         </div>
                     </div>

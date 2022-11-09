@@ -6,8 +6,13 @@ const project = () => {
             url:"https://prismatic-paletas-30574d.netlify.app/#/gohcomputer",
             img_url:"https://res.cloudinary.com/dfsflp11q/image/upload/v1666493469/proyects/project1_ztkwid.png",
             titulo:"E-Comerce",
-            descripcion:"",
-            tecnologias:""
+            descripcion:"Sistema de ventas con dashboard y sitio web (Ecommerce)",
+            tecnologias:["https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/nodejs_emipcf.jpg",
+            "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/html_nedseq.png",
+            "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/Bootstrap_iotlgx.png",
+            "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/postgre_hilucb.png",
+            "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/react_wr7glr.png",
+            "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/Bootstrap_iotlgx.png"]
 
         },  
         {
@@ -15,16 +20,37 @@ const project = () => {
             url:"https://sistprestamos.herokuapp.com/",
             img_url:"https://res.cloudinary.com/dfsflp11q/image/upload/v1666494694/proyects/proyect2_mtcttw.png",
             titulo:"Sistema de Prestamos",
-            descripcion:"",
-            tecnologias:""
+            descripcion:"sistema para gestionar prestamos",
+            tecnologias:[
+                "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/html_nedseq.png",
+                "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/nodejs_emipcf.jpg",
+                "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/Bootstrap_iotlgx.png",
+                "https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/mysql_lfkq4g.png"
+            ]
         }
     ]
 
-    const boxs = () => {
+    const tec=(position)=>{
+        let box = [];
+        position.tecnologias.forEach(element => {
+            box.push(
+                <div key={Math.random()*100} className="col">
+                    <div  className="box">
+                    
+                        <img src={element} alt="" />
+                    </div>
+                </div>)
+
+        })
+
+        return box
+    }
+
+    const boxs = (tec) => {
         let box = [];
         for (let i = 0; i < projects.length; i++) {
             box.push(
-                <div className="card m-3"  >
+                <div key={Math.random()*100} className="card m-3"  >
 
                         <div className="contentimg">
                         </div>
@@ -34,29 +60,10 @@ const project = () => {
                     
                 <div style={{height:"50%"}}>
                     <h3 className="header_cards text-center">{projects[i].titulo}</h3>
-                    <p className="card-text">Sistema de ventas para administrar y sitio web para el usuario final</p>
+                    <p className="card-text">{projects[i].descripcion}</p>
                     <div className="row project">
-                        <div className="col">
-                            <div className="box">
-                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/nodejs_emipcf.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div className="col">
-                           <div className="box">
-                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/html_nedseq.png" alt="" />
-                           </div>
-                        </div>
-                        <div className="col">
-                            <div className="box">
-                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196519/icons/Bootstrap_iotlgx.png" alt="" />
-                           </div>
-                        </div>
-                        <div className="col">
-                            <div className="box">
-                                <img src="https://res.cloudinary.com/dfsflp11q/image/upload/v1666196518/icons/postgre_hilucb.png" alt="" />
-                           </div>
-                            
-                        </div>
+                   
+                        {tec(projects[i])}                         
                         
                     </div>
                 </div>
@@ -74,7 +81,7 @@ const project = () => {
             <div className="underline"></div>
 
             <div className="projects row">
-                {boxs()}        
+                {boxs(tec)}        
             </div>
         </div>
         </div>
