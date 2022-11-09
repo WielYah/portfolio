@@ -27,7 +27,7 @@ const Header = () => {
         <div className="container">
           <div className="row w-100 m-auto"> 
             <div className="col-12 col-lg p-0 col-xl col_logo row"> 
-                <a className="navbar-brand col-10" href="#">Navbar</a>
+                <a className="navbar-brand col-10" href="#">Mi Portafolio</a>
                 <button className="navbar-toggler col p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

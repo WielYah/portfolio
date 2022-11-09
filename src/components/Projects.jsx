@@ -3,7 +3,7 @@ const project = () => {
     const projects=[
         {
             id:1,
-            url:"https://prismatic-paletas-30574d.netlify.app/#/gohcomputer",
+            url:"https://super-llama-c4f5e7.netlify.app/#/gohcomputer",
             img_url:"https://res.cloudinary.com/dfsflp11q/image/upload/v1666493469/proyects/project1_ztkwid.png",
             titulo:"E-Comerce",
             descripcion:"Sistema de ventas con dashboard y sitio web (Ecommerce)",
