@@ -2,12 +2,12 @@
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="dark:bg-[#161619] p-8 dark:text-white ">
             <div className="container pb-5">
                 <div className="row">
 
                     <div className="col">
-                            <img src="/react.png" style={{width:"50px"}} alt="" />
+                            <img src="" style={{width:"50px"}} alt="" />
                     </div>
 
                     <div className="col text-end">

@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Brands from "./brands";
 import Contacto from "./Contacto";
 import Footer from "./Footer";
 import Header from "./header";
@@ -12,6 +13,7 @@ const Portafolio = () => {
         <Banner/>
         <Tecnologias/>
         <Projects/>
+        {/* <Brands></Brands> */}
         <Contacto/>
         <Footer/>
         </>
